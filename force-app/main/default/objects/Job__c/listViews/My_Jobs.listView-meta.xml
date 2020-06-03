@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Jobs</fullName>
+    <columns>NAME</columns>
+    <columns>JobID__c</columns>
+    <columns>Status__c</columns>
+    <columns>Date_Uploaded__c</columns>
+    <columns>Account__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>JobID__c</field>
+        <operation>startsWith</operation>
+        <value>j</value>
+    </filters>
+    <label>My Jobs</label>
+</ListView>

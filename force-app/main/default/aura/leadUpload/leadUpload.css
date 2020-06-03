@@ -1,0 +1,25 @@
+.THIS .submit {
+    border: 1px solid #333333;
+    background-color: #FFFFFF;
+    color: #333333;
+    padding: 0.5em 2em;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.THIS .submit:hover {
+    background-color: #01aeef;
+    color: white;
+}
+
+.THIS .upload {
+    background-color: #ff0000;
+}
+
+.THIS .upload:hover {
+    background-color: #01aeef;
+}

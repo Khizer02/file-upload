@@ -1,0 +1,32 @@
+<aura:component controller="leadUploadCtrl" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<!-- Attributes and Handler -->
+    <aura:attribute name="message" type="String"/>
+    <aura:attribute name="recID" type="String"/>
+    <aura:attribute name="jobID" type="String"/>
+    
+    <!-- Comp -->
+    <lightning:card title='Upload Leads' iconName="standard:lead">
+        <div>
+            <div class="slds-grid slds-m-around--small slds-hide" >
+                <input aura:id="file" type="file" name="file"></input>
+            </div>
+            <hr/>
+            <div class="slds-grid slds-m-around--small">
+                <lightning:button class="upload slds-col--padded slds-size--1-of-1 slds-p-vertical_small" variant="neutral" label="Upload" onclick="{!c.click}">
+                    <lightning:icon iconName="utility:touch_action" variant="inverse"/>
+                </lightning:button>
+            </div>
+            <div class="slds-align_absolute-center slds-grid slds-m-around--small slds-box slds-theme--default slds-hide" aura:id="previewContainer">
+                <img aura:id="imagePreview" class="imagePreview" src="{!$Resource.leadPreview}" height="500" width="650"/>
+            </div>
+            <br/>        
+        </div>
+    </lightning:card>
+    
+    
+    <div style="border:1px solid #ccc">
+        <lightning:button aura:id="submit" type="button" class="submit" onclick="{!c.submit}">Submit</lightning:button>
+    </div>
+    <b style="padding-top:10px;">Message: {! v.message }</b>
+    
+</aura:component>

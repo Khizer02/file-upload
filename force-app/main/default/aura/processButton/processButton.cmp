@@ -1,0 +1,8 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<div class="slds-grid slds-m-around--small">
+        <lightning:button class="red slds-col--padded slds-size--1-of-1 slds-p-vertical_small" label="Create Conflict Request" onclick="{!c.openModal}">
+            <lightning:icon style="padding-right:5px;" iconName="utility:rules" variant="bare"/>
+            <b style="color:white;font-size:15px">Run Lead Process</b>
+        </lightning:button>
+    </div>
+</aura:component>
